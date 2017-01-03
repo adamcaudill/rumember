@@ -42,7 +42,6 @@ class Rumember
       puts "Logged in as #{account.username}"
     else
       account.smart_add(argv.join(' '))
-      puts "ADDED: " + argv.join(' ')
     end
   rescue Error
     $stderr.puts "#$!"
